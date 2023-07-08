@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/mathjs@11.8.2/lib/browser/math.js"></script>
+
+
+    </head>
+    <body>
+    <table class="calculator table">
+        <thead>			
+            <tr>
+                <td colspan=7>
+                    <div class="output form-group">
+                        <input type="text" class="ans form-control" value="" readonly name="">
+                    </div>				
+                </td>
+            </tr>
+        </thead>
+        <tbody class="actions">		
+            <tr>
+                <td>
+                    <label for="red">Rad</label>
+                    <input id="red" type="radio" name="radio" value="Radian" checked>
+                </td>
+                <td colspan="2">
+                    <label for="deg">Deg</label>
+                    <input id="deg" type="radio" name="radio" value="Degree">
+                </td>
+        
+                <td >
+                    <button type="button"  class="btn btn-op btnop12" value='('>(</button>				
+                    
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value=')'>)</button>				
+                    
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op btnop12" value="" onclick="backBtn()">⌫	</button>			
+                </td>
+                
+                <td>
+                    <button type="button"  class="btn btn-op" value='ce' onclick="clear()">CE</button>				
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button"  class="btn btn-op" value='' onclick="inverse()">Inv</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" id="sin" value='sin('>sin</button>			
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='In'>ln</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='7'>7</button>
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='8'>8</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='9'>9</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='/'>÷</button>				
+                    
+                </td>
+            </tr>			
+            <tr>
+                <td>
+                    <button type="button"  class="btn btn-op" value='*3.14'>π</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" id="cos" value='cos('>cos</button>			
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='log'>log</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='4'>4</button>
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='5'>5</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='6'>6</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='*'>×</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button"  class="btn btn-op" value='e'>e</button>				
+                </td>
+                <td>
+                    <button type="button"  id="tan" class="btn btn-op" value='tan('>tan</button>			
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='sqrt('>√</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='3'>3</button>
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='2'>2</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='1'>1</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='-'>-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button"  class="btn btn-op" value='exp('>EXP</button>			
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='^('>x^</button>		
+                </td>
+
+                <td>
+                    <button type="button"  class="btn btn-op" value='%'>%</button>			
+                    
+                </td>
+
+                <td>
+                    <button type="button"  class="btn btn-op" value='.'>.</button>
+                </td>
+                <td>
+                    <button type="button"  class="btn" value='0'>0</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='' onclick="calculate()">=</button>				
+                </td>
+                <td>
+                    <button type="button"  class="btn btn-op" value='+'>+</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
