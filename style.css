@@ -32,3 +32,10 @@
 	background-color: #751b1b;
 	color: aliceblue;
 }
+
+media screen and (max-width: 480px) {
+	.calculator{
+		background-color: aqua;
+		width: 80px;
+	}
+  }
